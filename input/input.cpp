@@ -1,17 +1,33 @@
 #include<iostream>
-#include<string>
+#include "input.h"
 
 using namespace std;
 
-void Wellcome(){
-    int budget; //งบ
-    int days; // จน.วันที่ไป
-    int people; // จน.คนที่ไป
+TravelPreference getUserInput(){
 
-    bool hascar; // มีรถบ่
-    string tripStyle; //ชอบเที่ยวแบบไหนหงะ
+    TravelPreference pref;
+
+    cout<<"=====>>> Smart Trip Assistant <<<=====" << endl;
+    cout<<"Please enter your travel information below.\n"<<endl;
+
+    cout << "Budget [TH-Bath] : ";
+    cin >> pref.budget;
+
+    cout << "Number of travel days : ";
+    cin >> pref.days;
+
+    cout << "Number of people : ";
+    cin >> pref.people;
+
+    cout << "Do you have a private car? [1 = Yes , 0 = No] : ";
+    cin >> pref.hascar;
+
+    cin.ignore(); //clear เพราะเดี๋ยวจะใช้ getline
+
+    cout << "Preferred travel style (Relax / Adventure / Foodie / Photography): ";
+    getline(cin,pref.tripStyle);
 
 
-    cout<< ""
+
 
 }
