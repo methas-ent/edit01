@@ -1,7 +1,17 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
-int main(){
-    //test
+void Wellcome(){
+    int budget; //งบ
+    int days; // จน.วันที่ไป
+    int people; // จน.คนที่ไป
+
+    bool hascar; // มีรถบ่
+    string tripStyle; //ชอบเที่ยวแบบไหนหงะ
+
+
+    cout<< ""
+
 }
